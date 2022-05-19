@@ -1,7 +1,6 @@
 const delay = require('delay');
 const { MessageEmbed } = require('discord.js');
 const { bass } = require('../../config/filter')
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -28,6 +27,5 @@ module.exports = {
 
         await delay(5000);
         msg.edit({ content: " ", embeds: [bassed] });
-            logger.info(`[Filters] Bass used by ${message.author.tag} from ${message.guild.name}`);
    }
 };

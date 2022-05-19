@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 
 module.exports = { 
@@ -32,6 +31,5 @@ module.exports = {
             .setColor('#000001');
 
         msg.edit({ content: " ", embeds: [skipto] });
-            logger.info(`[Command/Logger] Skipto used by ${message.author.tag} from ${message.guild.name}`);
     }
 }

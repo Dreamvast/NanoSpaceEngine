@@ -1,7 +1,6 @@
 const delay = require('delay');
 const { MessageEmbed } = require('discord.js');
 const { karaoke } = require('../../config/filter')
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -22,12 +21,11 @@ module.exports = {
 
         await player.setFilter('filters', karaoke);
 
-        const nightcored = new MessageEmbed()
+        const karaoked = new MessageEmbed()
             .setAuthor({ name: "Turned on: Karaoke", iconURL: 'https://cdn.discordapp.com/emojis/758423098885275748.gif'})
             .setColor('#000001');
 
         await delay(5000);
-        msg.edit({ content: " ", embeds: [nightcored] });
-            logger.info(`[Filters] Karaoke used by ${message.author.tag} from ${message.guild.name}`);
+        msg.edit({ content: " ", embeds: [karaoked] });
    }
 };

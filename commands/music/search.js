@@ -1,6 +1,5 @@
 const { MessageEmbed } = require("discord.js");
 const { convertTime } = require("../../structures/convert");
-const logger = require('../../plugins/logger')
 
 
 module.exports = { 
@@ -38,7 +37,6 @@ module.exports = {
                     .setColor('#000001')
 
                     msg.edit({ content: " ", embeds: [embed] });
-                        logger.info(`[Command/Logger] Search used by ${message.author.tag} from ${message.guild.name}`);
                     if (!player.playing) player.play()
                     break;
                 
@@ -74,7 +72,6 @@ module.exports = {
                             .setColor('#000001');
 
                         msg.edit({ content: " ", embeds: [embed] });
-                            logger.info(`[Command/Logger] Search used by ${message.author.tag} from ${message.guild.name}`);
                         if(!player.playing) player.play();
                     });
 
@@ -92,7 +89,6 @@ module.exports = {
                         .setColor('#000001')
 
                     msg.edit({ content: " ", embeds: [playlist] });
-                        logger.info(`[Command/Logger] Search used by ${message.author.tag} from ${message.guild.name}`);
                         if(!player.playing) player.play()
                     break;
             }

@@ -2,7 +2,7 @@ const delay = require('delay');
 const { earrape } = require('../../config/volume.js')
 const { reset } = require('../../config/filter.js')
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
+
 
 module.exports = { 
     config: {
@@ -30,6 +30,5 @@ module.exports = {
 
         await delay(3000);
         msg.edit({ content: " ", embeds: [earrapped] });
-            logger.info(`[Filters] Earrape used by ${message.author.tag} from ${message.guild.name}`);
     }
 };

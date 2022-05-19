@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 module.exports = {
     config: {
@@ -27,7 +26,6 @@ module.exports = {
 					.setColor('#000001');
 
 					msg.edit({ content: " ", embeds: [looped] });
-						logger.info(`[Command/Logger] Loop used by ${message.author.tag} from ${message.guild.name}`);
 			}
 			else {
 				player.setTrackRepeat(false);
@@ -37,7 +35,6 @@ module.exports = {
 					.setColor('#000001');
 
 					msg.edit({ content: " ", embeds: [unlooped] });
-						logger.info(`[Command/Logger] Unloop used by ${message.author.tag} from ${message.guild.name}`);
 			}
 		}
 		else if (args[0] == 'all') {
@@ -49,7 +46,6 @@ module.exports = {
 					.setColor('#000001');
 
 					msg.edit({ content: " ", embeds: [unloopall] });
-						logger.info(`[Command/Logger] Unloopall used by ${message.author.tag} from ${message.guild.name}`);
 			}
 			else {
 				player.setQueueRepeat(true);
@@ -59,7 +55,6 @@ module.exports = {
 					.setColor('#000001');
 
 					msg.edit({ content: " ", embeds: [loopall] });
-						logger.info(`[Command/Logger] Loopall used by ${message.author.tag} from ${message.guild.name}`);
 			}
 		}
 	}

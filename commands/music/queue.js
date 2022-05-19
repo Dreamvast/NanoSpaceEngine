@@ -1,4 +1,3 @@
-const logger = require('../../plugins/logger')
 const { MessageEmbed, MessageButton } = require('discord.js');
 const { NormalPage } = require('../../structures/PageQueue.js');
 const formatDuration = require('../../structures/formatduration');
@@ -17,7 +16,6 @@ module.exports = {
         const { channel } = message.member.voice;
         if (!channel || message.member.voice.channel !== message.guild.me.voice.channel) return message.channel.send("You need to be in a same/voice channel.")
 
-		logger.info(`[Command/Logger] Queue used by ${message.author.tag} from ${message.guild.name}`);
 
 		const song = player.queue.current;
 		const qduration = `${formatDuration(player.queue.duration)}`;

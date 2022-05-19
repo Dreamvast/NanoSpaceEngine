@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
 const formatDuration = require('../../structures/formatduration.js')
-const logger = require('../../plugins/logger')
 
 const fastForwardNum = 10;
 
@@ -54,8 +53,6 @@ module.exports = {
                 .setColor('#000001');
 
                 msg.edit({ content: " ", embeds: [forward2] });
-                    logger.info(`[Command/Logger] Forward used by ${message.author.tag} from ${message.guild.name}`);
-
             } else {
                 return msg.edit('Cannot forward beyond the song\'s duration.');
             }

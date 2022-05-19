@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
 const formatDuration = require('../../structures/formatduration.js')
-const logger = require('../../plugins/logger')
 
 const rewindNum = 10;
 
@@ -33,7 +32,6 @@ module.exports = {
                 .setColor('#000001');
 
                 msg.edit({ content: " ", embeds: [rewind1] });
-                    logger.info(`[Command/Logger] Rewind used by ${message.author.tag} from ${message.guild.name}`);
             }
             else {
                 return msg.edit('Cannot rewind beyond 00:00');
@@ -52,7 +50,6 @@ module.exports = {
                 .setColor('#000001');
 
                 msg.edit({ content: " ", embeds: [rewind2] });
-                    logger.info(`[Command/Logger] Rewind used by ${message.author.tag} from ${message.guild.name}`);
             }
             else {
                 return msg.edit('Cannot rewind beyond 00:00');

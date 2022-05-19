@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
 const formatDuration = require('../../structures/formatduration.js')
-const logger = require('../../plugins/logger')
 
 
 module.exports = { 
@@ -31,6 +30,5 @@ module.exports = {
             .setColor('#000001');
 
         msg.edit({ content: ' ', embeds: [seeked] });
-            logger.info(`[Command/Logger] Seek used by ${message.author.tag} from ${message.guild.name}`);
     }
 }

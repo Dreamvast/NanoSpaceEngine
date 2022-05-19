@@ -1,7 +1,6 @@
 const delay = require('delay');
 const { MessageEmbed } = require('discord.js');
 const { reset } = require('../../config/filter');
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -33,6 +32,5 @@ module.exports = {
 			.setColor('#000001');
 		await delay(5000);
 		msg.edit({ content: " ", embeds: [embed] });
-			logger.info(`[Filters] Pitch used by ${message.author.tag} from ${message.guild.name}`);
 	}
 };

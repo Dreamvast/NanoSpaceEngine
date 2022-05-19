@@ -1,6 +1,5 @@
 const delay = require('delay');
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -44,6 +43,5 @@ module.exports = {
             
 		await delay(5000);
         msg2.edit({ content: " ", embeds: [embed] });
-        return logger.info(`[Command/Logger] BassBoost used by ${message.author.tag} from ${message.guild.name}`);
 	}
 };

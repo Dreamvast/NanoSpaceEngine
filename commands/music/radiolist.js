@@ -1,15 +1,9 @@
 //Inspired by YandereDev
-const {
-    MessageEmbed,
-    MessageActionRow,
-    MessageSelectMenu,
-    Discord
-  } = require("discord.js");
+  const { MessageEmbed, MessageActionRow, MessageSelectMenu, Discord } = require("discord.js");
   const config = require("../../plugins/config.js");
   const emoji = require("../../data/emojis.json");
   const { readdirSync } = require("fs");
   const { stripIndents } = require("common-tags");
-  const logger = require('../../plugins/logger')
   const streams = require("../../data/streams")
   
   
@@ -23,7 +17,6 @@ const {
       accessableby: "Members"
     },
         run: async (client, message, args) => {
-        logger.info(`[Command/Logger] RadioList used by ${message.author.tag} from ${message.guild.name}`);
         //Important
         const msg = await message.channel.send('** :notes: Loading please wait...**')
         const { channel } = message.member.voice;

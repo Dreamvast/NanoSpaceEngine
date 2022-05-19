@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -25,6 +24,5 @@ module.exports = {
             .setColor('#000001');
 
         msg.edit({ content: " ", embeds: [cleared] });
-            logger.info(`[Command/Logger] Clear used by ${message.author.tag} from ${message.guild.name}`);
     }
 }

@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const { reset } = require('../../config/filter')
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -56,6 +55,5 @@ module.exports = {
 
 		await delay(5000);
         msg.edit({ content: " ", embeds: [embed] });
-            logger.info(`[Filters] Equalizer used by ${message.author.tag} from ${message.guild.name}`);
 	}
 };

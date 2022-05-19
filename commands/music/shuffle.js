@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 
 module.exports = { 
@@ -25,6 +24,5 @@ module.exports = {
             .setColor('#000001');
         
         msg.edit({ content: " ", embeds: [shuffle] });
-            logger.info(`[Command/Logger] Shuffle used by ${message.author.tag} from ${message.guild.name}`);
     }
 }

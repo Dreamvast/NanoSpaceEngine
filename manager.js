@@ -1,11 +1,11 @@
 //Main Package
 const { Client, Intents, Collection } = require("discord.js");
 const { Manager } = require("erela.js");
-const deezer = require("erela.js-deezer");
-const apple = require("erela.js-apple");
-const facebook = require("erela.js-facebook");
+const Deezer = require('./plugins/Deezer');
+const AppleMusic  = require("erela.js-apple");
+const Facebook = require("erela.js-facebook");
 const path = require("path");
-const Spotify  = require("erela.js-spotify");
+const Spotify = require("erela.js-spotify");
 //Top.gg
 const logger = require('./plugins/logger')
 const DBL = require("top.gg");
@@ -49,13 +49,13 @@ class MainClient extends Client {
       nodes: this.config.NODES,
       autoPlay: true,
       plugins: [
-        new facebook(),
-        new deezer(),
-        new apple(),
+        new Deezer(),
+        new AppleMusic(),
         new Spotify({
           clientID,
           clientSecret
-        })
+        }),
+        new Facebook()
       ],
       send(id, payload) {
         const guild = client.guilds.cache.get(id);

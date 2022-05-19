@@ -1,5 +1,4 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 module.exports = {
     config: {
@@ -10,7 +9,6 @@ module.exports = {
         category: "music"
     },
     run: async (client, message, args, user) => {
-      logger.info(`[Command/Logger] Autoplay used by ${message.author.tag} from ${message.guild.name}`);
       //Library declaration.
       const fetch = require("node-fetch"); // import node-fetch module
       const msg = await message.channel.send(`**Loading please wait...**`);

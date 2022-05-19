@@ -1,6 +1,5 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 const { convertTime } = require("../../structures/convert.js")
-const logger = require('../../plugins/logger')
 const formatDuration = require('../../structures/formatduration.js')
 
 
@@ -41,7 +40,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setDescription(`**Queued • [${res.tracks[0].title}](${res.tracks[0].uri})** \`${convertTime(res.tracks[0].duration, true)}\` • ${res.tracks[0].requester}`)
-                    .setColor('#000001')
+                    .setColor('#1591d7')
                     const row = new MessageActionRow()
                         .addComponents(
                           new MessageButton()
@@ -124,7 +123,6 @@ module.exports = {
                         }
                       })
 
-                    logger.info(`[Command/Logger] Play used by ${message.author.tag} from ${message.guild.name}`);
                     if (!player.playing) player.play()
                     break;
                 //--------------------------------------------------------------------------------------------
@@ -137,7 +135,7 @@ module.exports = {
 
                     const embed1 = new MessageEmbed()
                         .setDescription(`**Queued • [${res1.tracks[0].title}](${res1.tracks[0].uri})** \`${convertTime(res1.tracks[0].duration, true)}\` • ${res1.tracks[0].requester}`)
-                        .setColor('#000001')
+                        .setColor('#1591d7')
                         const row1 = new MessageActionRow()
                         .addComponents(
                           new MessageButton()
@@ -219,7 +217,6 @@ module.exports = {
                         }
                       }
                       })
-                        logger.info(`[Command/Logger] Play used by ${message.author.tag} from ${message.guild.name}`);
                       if (!player.playing) player.play()
                     break;
                 //--------------------------------------------------------------------------------------------
@@ -229,7 +226,7 @@ module.exports = {
 
                     const playlist = new MessageEmbed()
                         .setDescription(`**Queued** • [${search.playlist.name}](${args.join(" ")}) \`${convertTime(search.playlist.duration)}\` (${search.tracks.length} tracks) • ${search.tracks[0].requester}`)
-                        .setColor('#000001')
+                        .setColor('#1591d7')
 
                     const row2 = new MessageActionRow()
                         .addComponents(
@@ -313,23 +310,24 @@ module.exports = {
                       } 
                       })
 
-                        logger.info(`[Command/Logger] Play used by ${message.author.tag} from ${message.guild.name}`);
                         if(!player.playing) player.play()
                     break;
                 //--------------------------------------------------------------------------------------------
                 case "LOAD_FAILED":
                     const loadfailed = new MessageEmbed()
-                        .setTitle(`❎ | No Result Found! `)
-                        .setDescription(`**Please check your link to make sure it is valid.**`)
-                        .setFooter({text: "Note: This bot only supports links of youtube, soundcloud, spotify, deezer and radio link."})
-                    msg.edit({ content: " ", embeds: [loadfailed]})
-                //--------------------------------------------------------------------------------------------
-                case "NO_MATCHES":
-                    const nomatches = new MessageEmbed()
                         .setTitle(`❎ | Track Load Failed! `)
                         .setDescription(`**Please check your link to make sure it is valid.**`)
                         .setFooter({text: "Note: This bot only supports links of youtube, soundcloud, spotify, deezer and radio link."})
+                    msg.edit({ content: " ", embeds: [loadfailed]})
+                    break;
+                //--------------------------------------------------------------------------------------------
+                case "NO_MATCHES":
+                    const nomatches = new MessageEmbed()
+                        .setTitle(`❎ | No Result Found! `)
+                        .setDescription(`**Please check your link to make sure it is valid.**`)
+                        .setFooter({text: "Note: This bot only supports links of youtube, soundcloud, spotify, deezer and radio link."})
                     msg.edit({ content: " ", embeds: [nomatches]})
+                    break;
             }
         }).catch(err => msg.edit(err.message))
     }

@@ -2,7 +2,6 @@ const delay = require('delay');
 const { normal } = require('../../config/volume.js');
 const { reset } = require('../../config/filter')
 const { MessageEmbed } = require('discord.js');
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -30,6 +29,5 @@ module.exports = {
 
         await delay(5000);
         msg.edit({ content: " ", embeds: [resetted] });
-            logger.info(`[Filters] Reset used by ${message.author.tag} from ${message.guild.name}`);
    }
 };

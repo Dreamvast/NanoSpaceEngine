@@ -1,7 +1,6 @@
 const delay = require('delay');
 const { MessageEmbed } = require('discord.js');
 const { tremolo } = require('../../config/filter')
-const logger = require('../../plugins/logger')
 
 module.exports = { 
     config: {
@@ -28,6 +27,5 @@ module.exports = {
 
         await delay(5000);
         msg.edit({ content: " ", embeds: [embed] });
-            logger.info(`[Filters] Tremolo used by ${message.author.tag} from ${message.guild.name}`);
    }
 };
