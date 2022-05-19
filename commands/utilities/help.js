@@ -19,7 +19,6 @@ module.exports = {
         const GuildPrefix = await GPrefix.findOne({ guild: message.guild.id });
     	if(GuildPrefix && GuildPrefix.prefix) PREFIX1 = GuildPrefix.prefix;
         
-        logger.info(`[Command/Logger] Help used by ${message.author.tag} from ${message.guild.name}`);
         const embed = new MessageEmbed()
             .setColor('#008dde')
             .setAuthor({ name: `${message.guild.me.displayName} Help Command!`, iconURL: message.guild.iconURL({ dynamic: true })})
