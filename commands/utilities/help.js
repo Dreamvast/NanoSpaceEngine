@@ -27,7 +27,7 @@ module.exports = {
         if(!args[0]) {
             const categories = readdirSync("./commands/")
 
-            embed.setDescription(`The bot prefix is: **${PREFIX}** \n ${message.guild.name} prefix is ${PREFIX1}`)
+            embed.setDescription(`The bot prefix is: **${PREFIX}** \n ${message.guild.name} prefix is: **${PREFIX1}**`)
             embed.setFooter({ text: `© ${message.guild.me.displayName} | Total Commands: ${client.commands.size}`, iconURL: client.user.displayAvatarURL({ dynamic: true })});
 
             categories.forEach(category => {

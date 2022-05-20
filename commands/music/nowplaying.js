@@ -1,7 +1,6 @@
 const formatDuration = require("../../structures/formatduration.js");
 const { MessageEmbed } = require("discord.js");
 const ytsr = require("youtube-sr").default;
-const logger = require('../../plugins/logger')
 
 
 module.exports = { 
@@ -46,6 +45,5 @@ module.exports = {
             .setTimestamp();
             
             msg.edit({ content: " ", embeds: [embed] })
-                logger.info(`[Command/Logger] Nowplaying used by ${message.author.tag} from ${message.guild.name}`);
     }
 }
