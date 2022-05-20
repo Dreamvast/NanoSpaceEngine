@@ -4,6 +4,7 @@
   "description": "✈ Join Discord: https://discord.gg/JHJDpW7Vgx👌",
   "main": "index.js",
   "dependencies": {
+    "@discordjs/builders": "^0.13.0",
     "@discordjs/rest": "^0.3.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
