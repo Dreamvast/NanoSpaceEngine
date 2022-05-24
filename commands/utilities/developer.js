@@ -11,7 +11,7 @@ module.exports = {
     },
     run: async (client, message, args) => {
 
-    const hpriyam = new MessageEmbed()
+    const xeondex = new MessageEmbed()
         .setTitle("Adivise/XeonDex | I'm just remake from Adivise")
         .setDescription("This is a remade music bot with added features. Special thanks to Adivise.")
         .setFooter({ text: "Consider Joining the server or Inviting the Bot :) This would help me alot!" })
@@ -38,7 +38,7 @@ const row = new MessageActionRow()
     )
 
   
-    await message.channel.send({ embeds: [hpriyam], components: [row] });
+    await message.channel.send({ embeds: [xeondex], components: [row] });
             
     }
 };
