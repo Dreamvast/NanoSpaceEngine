@@ -168,7 +168,7 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 
 </p>
 </details>
-<details><summary>📚 Installation on Deploy Platform (Self Hostinf 24/7) [CLICK ME]</summary>
+<details><summary>📚 Installation on Deploy Platform (Self Hosting 24/7) [CLICK ME]</summary>
 <p>
 	
 # Creating a discord bot account
