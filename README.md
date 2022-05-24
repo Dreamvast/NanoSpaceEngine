@@ -171,7 +171,9 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 </details>
 <details><summary>📚 Installation (Deploy Platform) [CLICK ME]</summary>
 <p>
-1: Click one of these 3 buttons.
-[![Deploy Dreamvast on Railway](https://railway.app/button.svg)](https://railway.app/new/template/O9uSe-?referralCode=gx5tSK)
+
+### Click one of these 3 link.
+
+[1. Deploy Dreamvast on Railway](https://railway.app/new/template/O9uSe-?referralCode=gx5tSK) (With Railway, you just follow the step in Railway)
 </p>
 </details>
