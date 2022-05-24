@@ -1,5 +1,10 @@
 
-  
+## 📚 Installation (Deploy Platform)
+<details><summary>📚 Installation (Deploy Platform) [CLICK ME]</summary>
+<p>
+</p>
+</details>
+
 ## 📑 Short Feature
 - [x] Music System
 - [x] Playlists System
