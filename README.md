@@ -43,8 +43,8 @@ Java 11-13 **[Download JDK13](http://www.mediafire.com/file/m6gk7aoq96db8g0/file
 ## 📚 Installation
 
 ```
-git clone https://github.com/Adivise/NanoSpacePlus
-cd NanoSpacePlus
+git clone https://github.com/Dreamvast/Dreamvast/
+cd Dreamvast
 npm install
 ```
 
