@@ -168,11 +168,42 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 
 </p>
 </details>
-<details><summary>📚 Installation (Deploy Platform) [CLICK ME]</summary>
+<details><summary>📚 Installation on Deploy Platform (Self Hostinf 24/7) [CLICK ME]</summary>
 <p>
+	
+# Creating a discord bot account
 
-### Click one of these 3 link.
+1. [Click this](https://discordpy.readthedocs.io/en/stable/discord.html) and follow follow the steps in it
+2. Make sure you enable PRESENCE INTENT, SERVER MEMBERS INTENT and MESSAGE CONTENT INTENT
+
+## Click one of these 3 link.
 
 [1. Deploy Dreamvast on Railway](https://railway.app/new/template/O9uSe-?referralCode=gx5tSK) (With Railway, you just follow the step in Railway)
+	
+[2. Deploy Dreamvast on Replit](https://replit.com/@XeonE52680v3/Dreamvast)
+### If you are deploy in replit, follow all this step bellow
+1. If you have clicked the "Deploy Dreamvast on Replit", click on "Fork repl"
+2. When you cloned your repl, click on "Secrets (Enviroment Variables)"
+3. At the enviroment area, scroll down and click on "Open raw editor"
+4. At the editor, copy this text **(Remember to change what it asks for in the text.)**
+```
+{
+	"TOKEN": "put your bot token here",
+	"LEAVE_TIMEOUT": "put your timeout value here (must be a number and 1000 = 1 seconds)",
+	"PREFIX": "put your prefix here",
+	"OWNER_ID": "put your id here (example: 898728768791789628)",
+	"NODE_HOST": "lavalink.darrenofficial.com",
+	"NODE_PORT": "80",
+	"NODE_PASSWORD": "FreeLava",
+	"SPOTIFY_ID": "put your spotify id here",
+	"SPOTIFY_SECRET": "put your spotify secret here",
+	"CLIENT_ID": "Put your client id here",
+	"GUILD_ID": "Put your guild (server) id here",
+	"TOPGG_TOKEN": "put your top.gg token here (required for autoplay command)",
+	"MONGO_URI": "put your mongo uri here"
+}
+```
+5. After finish, click on save.
+6. Click on Run and enjoy the bot!
 </p>
 </details>
