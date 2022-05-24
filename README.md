@@ -56,21 +56,29 @@ Copy or Rename `.env.example` to `.env` and fill out the values:
 
 ```.env
 # Bot
-TOKEN=REPLACE_HERE
-NP_REALTIME=false
-LEAVE_TIMEOUT=120000
-LANGUAGE=en
-EMBED_COLOR=#000001
-# Devloper
-OWNER_ID=REPLACE_HERE
-# Database
-MONGO_URI=mongodb://127.0.0.1:27017/nanospace
-LIMIT_TRACK=50
-LIMIT_PLAYLIST=10
+TOKEN=put your bot token here
+LEAVE_TIMEOUT=put your timeout value here (must be a number and 1000 = 1 seconds)
+PREFIX=put your prefix here
+OWNER_ID=put your id here (example: 898728768791789628)
+
 # Lavalink
-NODE_HOST=localhost
-NODE_PORT=5555
-NODE_PASSWORD=123456
+NODE_HOST=put your lavalink ip here
+NODE_PORT=put your lavalink port here
+NODE_PASSWORD=put your lavalink password here
+
+# Spotify
+SPOTIFY_ID=put your spotify id here
+SPOTIFY_SECRET=put your spotify secret here
+
+# Slash
+CLIENT_ID=Put your client id here
+GUILD_ID=Put your guild (server) id here # You can delete it or leave it alone
+
+# Top.gg
+TOPGG_TOKEN=put your top.gg token here (required)
+
+# Database
+MONGO_URI=put your mongo uri here
 ```
 
 > **OPTION 2️⃣**
