@@ -1,10 +1,3 @@
-
-## 📚 Installation (Deploy Platform)
-<details><summary>📚 Installation (Deploy Platform) [CLICK ME]</summary>
-<p>
-</p>
-</details>
-
 ## 📑 Short Feature
 - [x] Music System
 - [x] Playlists System
@@ -174,5 +167,11 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 📑 **Utilities Commands!**
 - Restart (d!restart) // (OWNER ONLY)
 
+</p>
+</details>
+<details><summary>📚 Installation (Deploy Platform) [CLICK ME]</summary>
+<p>
+1: Click one of these 3 buttons.
+[![Deploy Dreamvast on Railway](https://railway.app/button.svg)](https://railway.app/new/template/O9uSe-?referralCode=gx5tSK)
 </p>
 </details>
