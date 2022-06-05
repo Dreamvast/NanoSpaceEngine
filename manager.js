@@ -9,7 +9,7 @@ const Spotify = require("erela.js-spotify");
 
 //Main Code
 class MainClient extends Client {
-     constructor() {
+    constructor() {
         super({
             shards: "auto",
             allowedMentions: {
@@ -19,7 +19,6 @@ class MainClient extends Client {
             intents: [
                 Intents.FLAGS.GUILDS,
                 Intents.FLAGS.GUILD_MESSAGES,
-                Intents.FLAGS.GUILD_MEMBERS,
                 Intents.FLAGS.GUILD_VOICE_STATES,
             ]
         });
@@ -56,7 +55,7 @@ class MainClient extends Client {
     ["aliases", "slash", "commands"].forEach(x => client[x] = new Collection());
     ["loadCommand", "loadEvent", "loadPlayer", "loadDatabase"].forEach(x => require(`./handlers/${x}`)(client));
     }
-        connect() {
+    connect() {
         return super.login(this.token);
     };
 };

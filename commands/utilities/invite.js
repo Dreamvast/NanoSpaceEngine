@@ -20,13 +20,13 @@ module.exports = {
         .setTimestamp()
         .setColor("#3498DB");
 
-const row = new MessageActionRow()
-    .addComponents(
-      new MessageButton()
-        .setLabel("Invite Me")
-        .setStyle("LINK")
-        .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`)
-    )
+    const row = new MessageActionRow()
+        .addComponents(
+          new MessageButton()
+            .setLabel("Invite Me")
+            .setStyle("LINK")
+            .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`)
+        )
   
     await message.channel.send({ embeds: [invite], components: [row] });
             
