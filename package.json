@@ -1,7 +1,7 @@
 {
-  "name": "Dreamvast_RainyService",
+  "name": "dreamvast_rainyservice",
   "version": "1.0.5",
-  "description": "✈ Join Discord: https://discord.gg/JHJDpW7Vgx👌",
+  "description": "✈ Join Discord: https://discord.com/invite/xHvsCMjnhU",
   "main": "index.js",
   "dependencies": {
     "@discordjs/builders": "^0.13.0",
