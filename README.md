@@ -173,8 +173,7 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 	
 # Creating a discord bot account
 
-1. [Click this](https://discordpy.readthedocs.io/en/stable/discord.html) and follow the steps in it
-2. Make sure you enable PRESENCE INTENT, SERVER MEMBERS INTENT and MESSAGE CONTENT INTENT
+[Click this](https://discordpy.readthedocs.io/en/stable/discord.html) and follow the steps in it
 
 ## Click one of these 3 link.
 
