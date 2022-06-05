@@ -1,6 +1,6 @@
 const MainClient = require("../manager");
 const client = new MainClient();
-const { MessageActionRow, MessageButton, MessageSelectMenu, MessageEmbed } = require('discord.js');
+const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const CLIENT_ID = process.env.CLIENT_ID

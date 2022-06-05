@@ -1,3 +1,5 @@
+const MainClient = require("./manager");
+const client = new MainClient();
 const slash = process.env.TOGGLE_SLASH
 //Express server
 const express = require('express')
@@ -12,7 +14,8 @@ app.listen(process.env.PORT)
 if (slash === "enable"){
 	require("./plugins/slash.js")
 } else if (slash === "disable"){
-	require("./plugins/noSlash.js")
+	client.connect()
+	module.exports = client; 
 }
 
 
