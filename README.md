@@ -183,7 +183,8 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 	"GUILD_ID": "Put your guild (server) id here",
 	"TOPGG_TOKEN": "put your top.gg token here (required for autoplay command)",
 	"MONGO_URI": "put your mongo uri here",
-	"TOGGLE_SLASH": "(put enable or disable here to use or not use slash)"
+	"TOGGLE_SLASH": "(put enable or disable here to use or not use slash)",
+	"EMBED_COLOR": " "#1591d7" (put your hex code color here with "")"
 }
 ```
 5. After finish, click on save.
