@@ -23,7 +23,7 @@ module.exports = {
 
         const nightcored = new MessageEmbed()
             .setAuthor({ name: "Turned on: Nightcore", iconURL: 'https://cdn.discordapp.com/emojis/758423098885275748.gif'})
-            .setColor('#000001');
+            .setColor(client.color);
 
         await delay(5000);
         msg.edit({ content: " ", embeds: [nightcored] });

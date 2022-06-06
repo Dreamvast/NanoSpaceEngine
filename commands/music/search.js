@@ -34,7 +34,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setDescription(`**Queued • [${res.tracks[0].title}](${res.tracks[0].uri})** \`${convertTime(res.tracks[0].duration, true)}\` • ${res.tracks[0].requester}`)
-                    .setColor('#000001')
+                    .setColor(client.color)
 
                     msg.edit({ content: " ", embeds: [embed] });
                     if (!player.playing) player.play()
@@ -69,7 +69,7 @@ module.exports = {
 
                         const embed = new MessageEmbed()
                             .setDescription(`**Queued • [${track.title}](${track.uri})** \`${convertTime(track.duration)}\` • ${track.requester}`)
-                            .setColor('#000001');
+                            .setColor(client.color);
 
                         msg.edit({ content: " ", embeds: [embed] });
                         if(!player.playing) player.play();
@@ -86,7 +86,7 @@ module.exports = {
 
                     const playlist = new MessageEmbed()
                         .setDescription(`**Queued** • [${search.playlist.name}](${args.join(" ")}) \`${convertTime(search.playlist.duration)}\` (${search.tracks.length} tracks) • ${search.tracks[0].requester}`)
-                        .setColor('#000001')
+                        .setColor(client.color)
 
                     msg.edit({ content: " ", embeds: [playlist] });
                         if(!player.playing) player.play()

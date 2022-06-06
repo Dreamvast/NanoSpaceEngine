@@ -23,7 +23,7 @@ module.exports = {
 
         const softed = new MessageEmbed()
             .setAuthor({ name: "Turned on: Soft", iconURL: 'https://cdn.discordapp.com/emojis/758423098885275748.gif'})
-            .setColor('#000001');
+            .setColor(client.color);
 
         await delay(5000);
         msg.edit({ content: " ", embeds: [softed] });

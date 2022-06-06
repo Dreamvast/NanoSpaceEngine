@@ -18,7 +18,7 @@ module.exports = {
     	.addField('Nanospace:', `https://adivise.github.io/Stylish/`)
     	.addField(`${client.user.username}`, `https://top.gg/bot/958642964018642944`)
         .setTimestamp()
-        .setColor("#3498DB");
+        .setColor(client.color);
 
     const row = new MessageActionRow()
         .addComponents(

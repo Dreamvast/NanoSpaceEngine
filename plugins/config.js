@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
     TOKEN: process.env.TOKEN,
     PREFIX: process.env.PREFIX,
-
+    EMBED_COLOR: process.env.EMBED_COLOR,
     OWNER_ID: process.env.OWNER_ID || "YOUR_CLIENT_ID",
 
     LEAVE_TIMEOUT: parseInt(process.env.LEAVE_TIMEOUT || "120000"),

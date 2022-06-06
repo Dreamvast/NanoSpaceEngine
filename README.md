@@ -51,8 +51,7 @@ npm install
 
 ## 📄 Configuration
 
-> **OPTION 1️⃣**
-Copy or Rename `.env.example` to `.env` and fill out the values:
+> Copy or Rename `.env.example` to `.env` and fill out the values:
 
 ```.env
 # Bot
@@ -60,6 +59,8 @@ TOKEN=put your bot token here
 LEAVE_TIMEOUT=put your timeout value here (must be a number and 1000 = 1 seconds)
 PREFIX=put your prefix here
 OWNER_ID=put your id here (example: 898728768791789628)
+TOGGLE_SLASH=disable (put enable or disable here to use or not use slash)
+EMBED_COLOR="#1591d7" (put your hex code color here with "")
 
 # Lavalink
 NODE_HOST=put your lavalink ip here
@@ -84,24 +85,6 @@ MONGO_URI=put your mongo uri here
 > **OPTION 2️⃣**
 Go to folder `settings` edit `config.js` and you can fill out the values:
 
-```js
-require("dotenv").config();
-const { resolve } = require("path");
-module.exports = {
-    TOKEN: process.env.TOKEN || "YOUR_TOKEN",  // your bot token
-    PREFIX: process.env.PREFIX || "#", //<= default is #  // bot prefix
-    OWNER_ID: process.env.OWNER_ID || "YOUR_CLIENT_ID", //your owner discord id example: "515490955801919488"
-    LEAVE_TIMEOUT: parseInt(process.env.LEAVE_TIMEOUT || "120000"), // leave timeout default "120000" = 2 minutes // 1000 = 1 seconds
-    MONGO_URI: process.env.MONGO_URI || "YOUR_MONGO_URI", // your mongo uri
-    NODES: [
-      { 
-        host: process.env.NODE_HOST || "localhost",
-        port: parseInt(process.env.NODE_PORT || "5555"),
-        password: process.env.NODE_PASSWORD || "123456",
-      } 
-    ],
-}
-```
 After installation or finishes all you can use `node .` to start the bot. or `Run Start.bat`
 
 </p>

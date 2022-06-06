@@ -21,7 +21,7 @@ module.exports = {
             
             const unloopall = new MessageEmbed()
                 .setDescription(`\`🔁\` | **Song is unloop:** \`All\``)
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: ' ', embeds: [unloopall] });
 		}
@@ -30,7 +30,7 @@ module.exports = {
             
             const loopall = new MessageEmbed()
                 .setDescription(`\`🔁\` | **Song is loop:** \`All\``)
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: ' ', embeds: [loopall] });
 		}

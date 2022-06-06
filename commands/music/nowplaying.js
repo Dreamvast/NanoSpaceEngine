@@ -31,8 +31,8 @@ module.exports = {
         const uploadat = songInfo.uploadedAt;
 
         const embed = new MessageEmbed()
-            .setAuthor({ name: player.playing ? 'Now Playing...' : 'Song Pause..', iconURL: "https://cdn.discordapp.com/emojis/741605543046807626.gif" })
-            .setColor('#000001')
+            .setAuthor({ name: player.playing ? 'Now Playing...' : 'Song Pause..' })
+            .setColor(client.color)
             .setDescription(`**[${song.title}](${song.uri})**`)
             .setThumbnail(thumbnail)
             .addField('Author:', `${song.author}`, true)

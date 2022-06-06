@@ -21,7 +21,7 @@ module.exports = {
 		if (!args[0]) {
 			const embed = new Discord.MessageEmbed()
 				.setAuthor({ name: 'Custom Equalizer', iconURL: "https://cdn.discordapp.com/emojis/758423098885275748.gif"})
-				.setColor('#000001')
+				.setColor(client.color)
 				.setDescription('There are 14 bands that can be set from -10 to 10. Not all bands have to be filled out.')
 				.addField('Example Equalizer:', `${PREFIX}eq 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n${PREFIX}eq 2 3 0 8 0 5 0 -5 0 0`)
 				.addField('Reset Equalizer', `Typing : ${PREFIX}reset`)
@@ -51,7 +51,7 @@ module.exports = {
 			.setAuthor({ name: message.guild.name, iconURL: message.guild.iconURL({ dynamic: true })})
 			.setDescription(`Custom Equalizer: \`${bandsStr}\``)
 			.setFooter({ text: `Reset Equalizer, Typing: ${PREFIX}reset`})
-			.setColor('#000001');
+			.setColor(client.color);
 
 		await delay(5000);
         msg.edit({ content: " ", embeds: [embed] });

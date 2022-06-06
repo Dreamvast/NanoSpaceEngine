@@ -25,7 +25,7 @@ module.exports = {
             newPrefix.save().then(() => {
                 const embed = new MessageEmbed()
                 .setDescription(`**The prefix has been set to \`${args[0]}\`**`)
-                .setColor('#000001')
+                .setColor(client.color)
 
                 message.channel.send({ embeds: [embed] });
             }

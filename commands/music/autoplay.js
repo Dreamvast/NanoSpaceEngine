@@ -29,7 +29,7 @@ module.exports = {
               const NotVoted = new MessageEmbed()
               .setTitle("❎ | You haven't voted yet")
               .setDescription("To use this command, you have to vote this bot!")
-              .setColor("#008dde")
+              .setColor(client.color)
               const row = new MessageActionRow()
                   .addComponents(
                     new MessageButton()
@@ -61,7 +61,7 @@ module.exports = {
 
                 const off = new MessageEmbed()
                 .setDescription("\`📻\` | **Autoplay has been:** `Deactivated`")
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: " ", embeds: [off] });
             } else {
@@ -77,7 +77,7 @@ module.exports = {
 
                 const on = new MessageEmbed()
                 .setDescription("\`📻\` | **Autoplay has been:** `Activated`")
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: " ", embeds: [on] });
             }

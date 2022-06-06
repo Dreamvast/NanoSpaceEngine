@@ -28,7 +28,7 @@ module.exports = {
         
         const skipto = new MessageEmbed()
             .setDescription("\`⏭\` | **Song has been:** " + `\`Skipto\``)
-            .setColor('#000001');
+            .setColor(client.color);
 
         msg.edit({ content: " ", embeds: [skipto] });
     }

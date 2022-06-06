@@ -24,7 +24,7 @@ module.exports = {
 
         const changevol = new MessageEmbed()
             .setDescription(`\`🔊\` | **Change volume to:** \`${args[0]}\``)
-            .setColor('#000001');
+            .setColor(client.color);
         
         msg.edit({ content: " ", embeds: [changevol] });
     }

@@ -15,7 +15,7 @@ module.exports = {
         .setTitle("Adivise/XeonDex | I'm just remake from Adivise")
         .setDescription("This is a remade music bot with added features. Special thanks to Adivise.")
         .setFooter({ text: "Consider Joining the server or Inviting the Bot :) This would help me alot!" })
-        .setColor("#3498DB");
+        .setColor(client.color);
 
 const row = new MessageActionRow()
     .addComponents(

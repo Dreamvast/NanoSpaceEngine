@@ -25,7 +25,7 @@ module.exports = {
         .addField('Discord.js', `\`\`\`v13\`\`\``, true)
         .setTimestamp()
         .setFooter({ text: "Hope you like me!" })
-        .setColor("#3498DB");
+        .setColor(client.color);
 
     const row = new MessageActionRow()
         .addComponents(

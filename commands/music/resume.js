@@ -21,7 +21,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setDescription(`\`⏯\` | **Song has been:** \`${player.playing ? "Resumed" : "Paused"}\``)
-            .setColor('#000001');
+            .setColor(client.color);
 
         msg.edit({ content: " ", embeds: [embed] });
     }

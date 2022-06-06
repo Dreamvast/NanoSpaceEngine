@@ -14,7 +14,7 @@ module.exports = async (client, player, oldChannel, newChannel) => {
         .setTitle("Disconnected")
         .setDescription(`I've been disconnected from <#${oldChannel}>.`)
         .setTimestamp()
-        .setColor("#000001")
+        .setColor(client.color)
 
         if(channel) await channel.send({ embeds: [embed] })
          return player.destroy();
@@ -25,7 +25,7 @@ module.exports = async (client, player, oldChannel, newChannel) => {
         .setTitle("Moved")
         .setDescription(`I've been moved to <#${player.voiceChannel}>.`)
         .setTimestamp()
-        .setColor("#000001")
+        .setColor(client.color)
         
         if(channel) await channel.send({embeds: [embed] });
         if(player.paused) player.pause(false);

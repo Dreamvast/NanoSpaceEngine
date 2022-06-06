@@ -27,7 +27,7 @@ module.exports = {
 
         const seeked = new MessageEmbed()
             .setDescription("\`⏭\` | **Seeked to:** "+ `\`${Duration}\``)
-            .setColor('#000001');
+            .setColor(client.color);
 
         msg.edit({ content: ' ', embeds: [seeked] });
     }

@@ -20,7 +20,7 @@ module.exports = {
     	if(GuildPrefix && GuildPrefix.prefix) PREFIX1 = GuildPrefix.prefix;
         
         const embed = new MessageEmbed()
-            .setColor('#008dde')
+            .setColor(client.color)
             .setAuthor({ name: `${message.guild.me.displayName} Help Command!`, iconURL: message.guild.iconURL({ dynamic: true })})
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true, size: 2048 }));
 

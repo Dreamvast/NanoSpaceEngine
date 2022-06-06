@@ -24,7 +24,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setDescription(`\`🔊\` | **Joined:** \`${channel.name}\``)
-            .setColor('#000001')
+            .setColor(client.color)
 
         msg.edit({ content: " ", embeds: [embed] })
     }

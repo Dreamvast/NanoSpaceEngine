@@ -21,7 +21,7 @@ module.exports = {
         
         const cleared = new MessageEmbed()
             .setDescription("\`📛\` | **Queue has been:** `Cleared`")
-            .setColor('#000001');
+            .setColor(client.color);
 
         msg.edit({ content: " ", embeds: [cleared] });
     }

@@ -25,7 +25,7 @@ module.exports = {
         
         const resetted = new MessageEmbed()
             .setAuthor({ name: "Filter has been: Reseted", iconURL: 'https://cdn.discordapp.com/emojis/758423099178745876.gif'})
-            .setColor('#000001');
+            .setColor(client.color);
 
         await delay(5000);
         msg.edit({ content: " ", embeds: [resetted] });

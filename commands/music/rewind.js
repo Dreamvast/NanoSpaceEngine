@@ -29,7 +29,7 @@ module.exports = {
                 
                 const rewind1 = new MessageEmbed()
                 .setDescription("\`⏮\` | **Rewind to:** "+ `\`${CurrentDuration}\``)
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: " ", embeds: [rewind1] });
             }
@@ -47,7 +47,7 @@ module.exports = {
                 
                 const rewind2 = new MessageEmbed()
                 .setDescription("\`⏮\` | **Rewind to:** "+ `\`${CurrentDuration}\``)
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: " ", embeds: [rewind2] });
             }

@@ -19,7 +19,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setDescription(`\`⏸\` | **Paused:** \`${channel.name}\` \n\n **Used by:** \`${message.author.tag}\``)
-            .setColor('#000001');
+            .setColor(client.color);
 
         msg.edit({ content: " ", embeds: [embed] })
     }

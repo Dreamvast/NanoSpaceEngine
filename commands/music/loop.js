@@ -23,7 +23,7 @@ module.exports = {
 
 				const looped = new MessageEmbed()
 					.setDescription(`\`🔁\` | **Song is loop:** \`Current\``)
-					.setColor('#000001');
+					.setColor(client.color);
 
 					msg.edit({ content: " ", embeds: [looped] });
 			}
@@ -32,7 +32,7 @@ module.exports = {
 
 				const unlooped = new MessageEmbed()
 					.setDescription(`\`🔁\` | **Song is unloop:** \`Current\``)
-					.setColor('#000001');
+					.setColor(client.color);
 
 					msg.edit({ content: " ", embeds: [unlooped] });
 			}
@@ -43,7 +43,7 @@ module.exports = {
 
 				const unloopall = new MessageEmbed()
 					.setDescription(`\`🔁\` | **Song is unloop:** \`All\``)
-					.setColor('#000001');
+					.setColor(client.color);
 
 					msg.edit({ content: " ", embeds: [unloopall] });
 			}
@@ -52,7 +52,7 @@ module.exports = {
 
 				const loopall = new MessageEmbed()
 					.setDescription(`\`🔁\` | **Song is loop:** \`All\``)
-					.setColor('#000001');
+					.setColor(client.color);
 
 					msg.edit({ content: " ", embeds: [loopall] });
 			}

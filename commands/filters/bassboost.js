@@ -22,11 +22,10 @@ module.exports = {
 			const msg1 = await message.channel.send(`Turning on **Bassboost**. This may take a few seconds...`);
 			const embed = new MessageEmbed()
 				.setAuthor({ name: 'Turned on: Bassboost', iconURL: 'https://cdn.discordapp.com/emojis/758423098885275748.gif'})
-                .setColor('#000001');
+                .setColor(client.color);
                 
 			await delay(5000);
             msg1.edit({ content: " ", embeds: [embed] });
-            return logger.info(`[Filters] BassBoost used by ${message.author.tag} from ${message.guild.name}`);
         }
 
 		if (isNaN(args[0])) return message.channel.send('Amount must be a real number.');
@@ -39,7 +38,7 @@ module.exports = {
 		const msg2 = await message.channel.send(`Setting **Bassboost** to **${args[0]}dB**. This may take a few seconds...`);
 		const embed = new MessageEmbed()
 			.setAuthor({ name: `Bassboost set to: ${args[0]}`, iconURL: 'https://cdn.discordapp.com/emojis/758423098885275748.gif'})
-            .setColor('#000001');
+            .setColor(client.color);
             
 		await delay(5000);
         msg2.edit({ content: " ", embeds: [embed] });

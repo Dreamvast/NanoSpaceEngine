@@ -21,7 +21,7 @@ module.exports = {
 
         const shuffle = new MessageEmbed()
             .setDescription("\`🔀\` | **Queue has been:** `Shuffle`")
-            .setColor('#000001');
+            .setColor(client.color);
         
         msg.edit({ content: " ", embeds: [shuffle] });
     }

@@ -40,7 +40,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setDescription(`**Queued • [${res.tracks[0].title}](${res.tracks[0].uri})** \`${convertTime(res.tracks[0].duration, true)}\` • ${res.tracks[0].requester}`)
-                    .setColor('#1591d7')
+                    .setColor(client.color)
                     const row = new MessageActionRow()
                         .addComponents(
                           new MessageButton()
@@ -85,7 +85,7 @@ module.exports = {
 
                           const embed = new MessageEmbed()
                             .setDescription(`\`🔁\` **Loop has been:** \`${uni}\``)
-                            .setColor('#008dde');
+                            .setColor(client.color);
 
                           await message.reply({ embeds: [embed], ephemeral: true });
                         } else if (id === "rewind") {
@@ -97,7 +97,7 @@ module.exports = {
                               
                               const rewind = new MessageEmbed()
                               .setDescription("\`⏮\` | **Rewind to:** "+ `\`${CurrentDuration}\``)
-                              .setColor('#000001');
+                              .setColor(client.color);
               
                               await message.reply({ embeds: [rewind], ephemeral: true });
                           }
@@ -113,7 +113,7 @@ module.exports = {
                               
                               const forward = new MessageEmbed()
                               .setDescription("\`⏭\` | **Forward to:** "+ `\`${CurrentDuration}\``)
-                              .setColor('#000001');
+                              .setColor(client.color);
               
                               await message.reply({ embeds: [forward], ephemeral: true });
               
@@ -135,7 +135,7 @@ module.exports = {
 
                     const embed1 = new MessageEmbed()
                         .setDescription(`**Queued • [${res1.tracks[0].title}](${res1.tracks[0].uri})** \`${convertTime(res1.tracks[0].duration, true)}\` • ${res1.tracks[0].requester}`)
-                        .setColor('#1591d7')
+                        .setColor(client.color)
                         const row1 = new MessageActionRow()
                         .addComponents(
                           new MessageButton()
@@ -180,7 +180,7 @@ module.exports = {
 
                           const embed1 = new MessageEmbed()
                             .setDescription(`\`🔁\` **Loop has been:** \`${uni}\``)
-                            .setColor('#008dde');
+                            .setColor(client.color);
 
                           await message.reply({ embeds: [embed1], ephemeral: true });
                         } else if (id1 === "rewind") {
@@ -192,7 +192,7 @@ module.exports = {
                             
                             const rewind1 = new MessageEmbed()
                             .setDescription("\`⏮\` | **Rewind to:** "+ `\`${CurrentDuration1}\``)
-                            .setColor('#000001');
+                            .setColor(client.color);
             
                             await message.reply({ embeds: [rewind1], ephemeral: true });
                         }
@@ -208,7 +208,7 @@ module.exports = {
                             
                             const forward1 = new MessageEmbed()
                             .setDescription("\`⏭\` | **Forward to:** "+ `\`${CurrentDuration1}\``)
-                            .setColor('#000001');
+                            .setColor(client.color);
             
                             await message.reply({ embeds: [forward1], ephemeral: true });
             
@@ -226,7 +226,7 @@ module.exports = {
 
                     const playlist = new MessageEmbed()
                         .setDescription(`**Queued** • [${search.playlist.name}](${args.join(" ")}) \`${convertTime(search.playlist.duration)}\` (${search.tracks.length} tracks) • ${search.tracks[0].requester}`)
-                        .setColor('#1591d7')
+                        .setColor(client.color)
 
                     const row2 = new MessageActionRow()
                         .addComponents(
@@ -272,7 +272,7 @@ module.exports = {
 
                           const embed2 = new MessageEmbed()
                             .setDescription(`\`🔁\` **Loop has been:** \`${uni}\``)
-                            .setColor('#008dde');
+                            .setColor(client.color);
 
                           await message.reply({ embeds: [embed2], ephemeral: true });
                         } else if (id2 === "rewind") {
@@ -284,7 +284,7 @@ module.exports = {
                             
                             const rewind2 = new MessageEmbed()
                             .setDescription("\`⏮\` | **Rewind to:** "+ `\`${CurrentDuration2}\``)
-                            .setColor('#000001');
+                            .setColor(client.color);
             
                             await message.reply({ embeds: [rewind2], ephemeral: true });
                         }
@@ -300,7 +300,7 @@ module.exports = {
                             
                             const forward2 = new MessageEmbed()
                             .setDescription("\`⏭\` | **Forward to:** "+ `\`${CurrentDuration2}\``)
-                            .setColor('#000001');
+                            .setColor(client.color);
             
                             await message.reply({ embeds: [forward2], ephemeral: true });
             

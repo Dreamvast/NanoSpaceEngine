@@ -24,7 +24,9 @@ class MainClient extends Client {
         });
 
     this.config = require("./plugins/config.js");
+    this.color = this.config.EMBED_COLOR;
     this.prefix = this.config.PREFIX;
+    this.owner = this.config.OWNER_ID
     if(!this.token) this.token = this.config.TOKEN;
     const clientID = this.config.SPOTIFY_ID
     const clientSecret = this.config.SPOTIFY_SECRET

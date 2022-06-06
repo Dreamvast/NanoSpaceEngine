@@ -15,7 +15,7 @@ module.exports = {
         .setTitle("**Ping of **" + client.user.username)
         .setDescription(`My Ping is ***${client.ws.ping}ms***`)
         .setTimestamp()
-        .setColor("#3498DB");
+        .setColor(client.color);
 
     const row = new MessageActionRow()
         .addComponents(

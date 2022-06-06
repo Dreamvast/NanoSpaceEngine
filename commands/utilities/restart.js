@@ -14,7 +14,7 @@ module.exports = {
 
     const restart = new MessageEmbed()
         .setDescription("**Account has been**: `Shutting down...`")
-        .setColor("#000001");
+        .setColor(client.color);
 
     await message.channel.send({ embeds: [restart] });
         console.log(chalk.red(`[CLIENT] Restarting...`));

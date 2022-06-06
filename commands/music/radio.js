@@ -32,7 +32,7 @@ module.exports = {
 
                     const embed = new MessageEmbed()
                         .setDescription(`**Radio mode has been turned on. | ✅**`)
-                        .setColor('#000001')
+                        .setColor(client.color)
                     msg.edit({ content: " ", embeds: [embed] });
                     player.twentyFourSeven = true;
                     logger.info(`[Command/Logger] Radio used by ${message.author.tag} from ${message.guild.name}`);

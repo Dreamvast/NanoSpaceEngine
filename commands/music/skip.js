@@ -21,7 +21,7 @@ module.exports = {
 
         const skipped = new MessageEmbed()
             .setDescription("\`⏭\` | **Song has been:** `Skipped`")
-            .setColor('#000001');
+            .setColor(client.color);
 
         msg.edit({ content: " ", embeds: [skipped] });
     }

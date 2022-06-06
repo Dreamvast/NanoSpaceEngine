@@ -31,7 +31,7 @@ module.exports = {
                 
                 const forward1 = new MessageEmbed()
                 .setDescription("\`⏭\` | **Forward to:** "+ `\`${CurrentDuration}\``)
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: " ", embeds: [forward1] });
                     logger.info(`[Command/Logger] Forward used by ${message.author.tag} from ${message.guild.name}`);
@@ -50,7 +50,7 @@ module.exports = {
                 
                 const forward2 = new MessageEmbed()
                 .setDescription("\`⏭\` | **Forward to:** "+ `\`${CurrentDuration}\``)
-                .setColor('#000001');
+                .setColor(client.color);
 
                 msg.edit({ content: " ", embeds: [forward2] });
             } else {

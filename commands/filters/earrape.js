@@ -26,7 +26,7 @@ module.exports = {
 
         const earrapped = new MessageEmbed()
             .setAuthor({ name: "Turn on filter: Earrape", iconURL: 'https://cdn.discordapp.com/emojis/758423098885275748.gif'})
-            .setColor('#000001');
+            .setColor(client.color);
 
         await delay(3000);
         msg.edit({ content: " ", embeds: [earrapped] });

@@ -211,7 +211,7 @@
      async function loadradio(radioLink) {
           const embed1 = new MessageEmbed()
                 .setDescription(`**✅ | Radio mode has been turned on. Please wait....**`)
-                .setColor('#000001')
+                .setColor(client.color)
               await interaction.reply({ embeds: [embed1], ephemeral: true });
         client.manager.search(radioLink).then(async res => {
           switch (res.loadType) {
