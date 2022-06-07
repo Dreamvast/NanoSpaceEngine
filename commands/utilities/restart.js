@@ -17,8 +17,15 @@ module.exports = {
         .setColor(client.color);
 
     await message.channel.send({ embeds: [restart] });
-        console.log(chalk.red(`[CLIENT] Restarting...`));
-            
+        console.log(`[CLIENT] Restarting...`);
+    
+    process.once('SIGUSR2', function () {
+      gracefulShutdown(function () {
+        process.kill(process.pid, 'SIGUSR2');
+      });
+    });
+
     process.exit();
+
     }
 };

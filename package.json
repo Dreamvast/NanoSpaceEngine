@@ -37,7 +37,8 @@
     "youtube-sr": "^4.1.17"
   },
   "scripts": {
-    "start": "node --no-warnings index.js",
+    "start": "nodemon index.js",
+    "debug": "node index.js",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },
@@ -52,6 +53,7 @@
   },
   "homepage": "https://github.com/XeonE52680v3",
   "devDependencies": {
-    "node": "^17.7.2"
+    "node": "^17.7.2",
+    "nodemon": "^2.0.16"
   }
 }
