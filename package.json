@@ -37,8 +37,8 @@
     "youtube-sr": "^4.1.17"
   },
   "scripts": {
-    "start": "nodemon index.js",
-    "debug": "node index.js",
+    "auto": "nodemon index.js",
+    "start": "node index.js",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },

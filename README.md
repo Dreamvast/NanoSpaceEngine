@@ -85,7 +85,7 @@ MONGO_URI=put your mongo uri here
 > **OPTION 2️⃣**
 Go to folder `settings` edit `config.js` and you can fill out the values:
 
-After installation or finishes all you can use `npm start` for start the bot with auto update code or `node .` to start the bot. or `Run Start.bat`
+After installation or finishes all you can use `npm run auto` for start the bot with auto update code or `node .` to start the bot. or `Run Start.bat`
 
 </p>
 </details>
