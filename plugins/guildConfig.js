@@ -9,7 +9,7 @@ const GuildConfigSchema = new mongoose.Schema({
 	prefix: {
 		type: mongoose.SchemaTypes.String,
 		required: true,
-		default: 'd!',
+		default: process.env.PREFIX,
 	},
 	defaultRole: {
 		type: mongoose.SchemaTypes.String,
@@ -18,6 +18,11 @@ const GuildConfigSchema = new mongoose.Schema({
 	memberLogChannel: {
 		type: mongoose.SchemaTypes.String,
 		required: false,
+	},
+	playerControl: {
+		type: mongoose.SchemaTypes.String,
+		required: true,
+		default: 'disable',
 	}
 })
 
