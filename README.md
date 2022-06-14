@@ -1,3 +1,5 @@
+[![](https://iili.io/hWrlFp.png)](https://www.dmca.com/Protection/Status.aspx?ID=5467c424-89a9-47ba-8333-191051f752f5&refurl=https://github.com/Dreamvast/Dreamvast)
+
 ## 📑 Short Feature
 - [x] Music System
 - [x] Playlists System
@@ -189,5 +191,11 @@ After installation or finishes all you can use `npm run auto` for start the bot 
 ```
 5. After finish, click on save.
 6. Click on Run and enjoy the bot!
+</p>
+</details>
+
+<details><summary>🔒 License protection</summary>
+<p>
+This project is licensed under GPL-3.0 license and protected by DMCA. So if you want to public your bot with this source code please remake and credit me (XeonE52680v3) and Adivise into your bot or I will request takedown your bot.
 </p>
 </details>
