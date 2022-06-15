@@ -102,5 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
-plugins/Nico/index.js
-plugins/Nico/plugin.js
+plugins/NicoDownloader/index.js
+plugins/NicoDownloader/plugin.js
