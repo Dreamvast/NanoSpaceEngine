@@ -2,12 +2,6 @@
 
 ## 📑 Short Feature
 - [x] Music System
-- [x] Playlists System
-- [x] Premium System
-- [x] Setup Request System
-- [x] Multi Language
-- [x] SlashCommand
-- [x] ContextMenus
 - [x] Custom Filters
 - [x] Easy to use
 
